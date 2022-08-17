@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PaintJS</title>
+  </head>
+  <body>
+    <canvas id="jsCanvas" class="canvas"></canvas> 
+    <!-- JS를 작업할땐 ID를 사용하고, CSS를 작업할땐 class사용-->
+    <div class="controls">
+      <!-- range input 막대 생성 -->
+      <div class="controls__range">
+        <input
+          type="range"
+          id="jsRange"
+          min="0.1"
+          max="5"
+          value="2.5"
+          step="0.1"
+        />
+      </div>
+      <div class="controls__btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+        <input type="file" id="real-input" accept="image/*" required multiple style="display: none;" >
+        <!-- 위의 경우 input file 필드를 사용하게 되면 UI 커스터마이징이 불가능하다고 한다...
+        따라서 대안을 사용하여 다른 태그와 연동해 input file 태그의 기능을 대신하도록 만든다. -->
+        <button id="jsUpload">Upload</button>
+        <div class="res"></div>
+        
+      </div>
+      <div class="controls__colors" id="jsColors">
+        <div
+          class="controls__color jsColor"
+          style="background-color:#2c2c2c"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:white"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#FF3B30"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#FF9500"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#FFCC00"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#4CD963"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#5AC8FA"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#0579FF"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:#5856D6"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color:pink"
+        ></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
