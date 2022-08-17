@@ -105,17 +105,7 @@ if (saveBtn) {
   saveBtn.addEventListener("click", handleSaveClick);
 }
 
-/* 이미지 불러오기 추가 < 0715 */
-const img = new Image();
-function imageLoadCanvas() {
-  console.log("click buntton");
-  const ptrn = ctx.createPattern(img, "repeat"); // Create a pattern with this image, and set it to "repeat".
-  ctx.fillStyle = ptrn;
-  ctx.fillRect(0, 0, canvas.width, canvas.height); // context.fillRect(x, y, width, height);
-}
-
-
-
+//업로드
 function getImageFiles(e) {
   const file = e.target.files[0];
   console.log(file);
