@@ -138,8 +138,4 @@ if (input) {
   input.addEventListener("change", getImageFiles);
 }
 
-// 글자 입력 참고1 : https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_text
-// 글자 입력 참고2 : https://stackoverflow.com/questions/21011931/how-to-embed-an-input-or-textarea-in-a-canvas-element
-// 글자 입력 참고3 : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=websearch&logNo=221571168786 // 한국블로그
-
 // 이미지 업로드 참고 : https://juni-official.tistory.com/209
