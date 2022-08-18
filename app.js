@@ -119,6 +119,8 @@ function getImageFiles(e) {
       // canvas.width = img.width;
       // canvas.height = img.height;
       ctx.drawImage(img, 0, 0, 700, 700);
+      //기존에 ctx.drawImage(img, 0, 0); 이런식으로 입력했더니 사진 크기가 정상적으로 나오지 않고 그림이 제대로 그려지지 않았음
+      //이후 뒤에 입력을 추가해서 그림의 크기를 강제로 캔버스와 동일하게 지정하여 설정...
     };
   };
 
